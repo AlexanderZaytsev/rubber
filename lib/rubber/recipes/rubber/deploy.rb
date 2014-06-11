@@ -108,7 +108,7 @@ namespace :rubber do
     end
   end
 
-  def run_config
+  def run_config(options = {})
     opts = ""
     opts += " --no_post" if ENV['NO_POST']
     opts += " --force"   if ENV['FORCE']
